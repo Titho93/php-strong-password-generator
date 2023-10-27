@@ -16,13 +16,17 @@ if(isset($_SESSION["sended_psw"])){
 
 <body>
 
-<div class="container text-center p-5">
+<div class="container-tb text-center">
     <h1> STRONG PASSWORD GENERATOR</h1>
     <h2>GENERA UNA PASSWORD SICURA</h2>
-    <h3>Ecco la tua password:</h3>
-    <p><?php echo $psw ?></p>
+    <form action="index.php" method='GET'>
+        <div class="mess">
+        <h3>Ecco la tua password:</h3> 
+        </div>
+        <div class="form p-1 ">
+        <p><?php echo $psw ?></p>
+        </div>
+    </form>
 </div>
-    
-
 </body>
 </html>

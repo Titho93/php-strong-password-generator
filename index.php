@@ -3,6 +3,7 @@
 include __DIR__ . "/partials/head.php";
 include __DIR__ . "/partials/functions.php";
 
+
 $msg = 'Scegliere una password con un minimo di 8 caratteri e un massimo di 32 caratteri';
 
 if(isset($_GET['number'])){
@@ -11,7 +12,7 @@ if(isset($_GET['number'])){
         $_SESSION['sended_psw'] = generateCharactersRandom($_GET['number']);
         header("Location: ./landing_page.php");
     }else{
-        $msg = 'error';
+        $msg = 'Errore! la lunghezza della password deve avere un minimo di 8 caratteri e un massimo di 32 caratteri';
     }
 }
 
@@ -19,11 +20,11 @@ if(isset($_GET['number'])){
 
 <body>
 
-<div class="container text-center p-5">
+<div class="container-tb text-center">
     <h1> STRONG PASSWORD GENERATOR</h1>
     <h2>GENERA UNA PASSWORD SICURA</h2>
     <form action="index.php" method='GET'>
-        <div class="mess p-5">
+        <div class="mess">
             <p><?php echo $msg ?></p>
         </div>
         <div class="form p-1 ">

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-tb {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 250px;
+    background-color: blue;
+}
+
+h1 {
+    color: grey;
+}
+
+h2 {
+    color: black;
+}
+
+.mess {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px 0;
+    background-color: black;
+    border-radius: 20px;
+    color: red;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto 30px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+input {
+    width: 70px;
+    background-color: grey;
+    border-radius: 10px;
+    padding-left: 10px;
+}
