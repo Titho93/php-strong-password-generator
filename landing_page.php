@@ -27,6 +27,7 @@ if(isset($_SESSION["sended_psw"])){
         <p><?php echo $psw ?></p>
         </div>
     </form>
+    <a href="index.php">Return</a>
 </div>
 </body>
 </html>
