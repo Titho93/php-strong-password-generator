@@ -7,12 +7,13 @@ $msg = 'Scegliere una password con un minimo di 8 caratteri e un massimo di 32 c
 
 if(isset($_GET['number'])){
     if((($_GET['number']) > 7) && (($_GET['number']) < 33)){
-        generateCharactersRandom($_GET['number']);
+        session_start();
+        $_SESSION['sended_psw'] = generateCharactersRandom($_GET['number']);
+        header("Location: ./landing_page.php");
     }else{
         $msg = 'error';
     }
 }
-var_dump(generateCharactersRandom($_GET['number']))
 
 ?>
 
